@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="程序员,Client,Game," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="xtutu" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="前言前一段时间，我换了一份工作，来到了一家新的公司一个新的项目组。这个项目是一款有IP的卡牌类游戏，客户端所采用的引擎是cocos2dx 2.X的C++版本，所用的UI编辑器是cocosbuilder，通讯协议是http。其实是一款蛮不错的产品，但是整个客户端的架构有很大的问题。所以就想着写这样一篇文章，谈谈自己对于一">
+<meta name="keywords" content="程序员,Client,Game">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一款优秀的游戏产品，客户端所需要考虑的一些问题">
+<meta property="og:url" content="http://www.xtutu.me/how-to-create-a-good-game-for-client-programmer/index.html">
+<meta property="og:site_name" content="xtutu">
+<meta property="og:description" content="前言前一段时间，我换了一份工作，来到了一家新的公司一个新的项目组。这个项目是一款有IP的卡牌类游戏，客户端所采用的引擎是cocos2dx 2.X的C++版本，所用的UI编辑器是cocosbuilder，通讯协议是http。其实是一款蛮不错的产品，但是整个客户端的架构有很大的问题。所以就想着写这样一篇文章，谈谈自己对于一款游戏产品客户端架构的想法。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-01T07:01:36.530Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一款优秀的游戏产品，客户端所需要考虑的一些问题">
+<meta name="twitter:description" content="前言前一段时间，我换了一份工作，来到了一家新的公司一个新的项目组。这个项目是一款有IP的卡牌类游戏，客户端所采用的引擎是cocos2dx 2.X的C++版本，所用的UI编辑器是cocosbuilder，通讯协议是http。其实是一款蛮不错的产品，但是整个客户端的架构有很大的问题。所以就想着写这样一篇文章，谈谈自己对于一款游戏产品客户端架构的想法。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.xtutu.me/how-to-create-a-good-game-for-client-programmer/"/>
+
+
+
+
+
+  <title>一款优秀的游戏产品，客户端所需要考虑的一些问题 | xtutu</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-71540300-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?763c0ecb8b6533766f236a6ddeb8d513";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">xtutu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">学习|思考|分享</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.xtutu.me/how-to-create-a-good-game-for-client-programmer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xtutu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/icon.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xtutu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">一款优秀的游戏产品，客户端所需要考虑的一些问题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-19T18:00:00+08:00">
+                2015-07-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/小结/" itemprop="url" rel="index">
+                    <span itemprop="name">小结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/how-to-create-a-good-game-for-client-programmer/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="how-to-create-a-good-game-for-client-programmer/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前一段时间，我换了一份工作，来到了一家新的公司一个新的项目组。这个项目是一款有IP的卡牌类游戏，客户端所采用的引擎是cocos2dx 2.X的C++版本，所用的UI编辑器是cocosbuilder，通讯协议是http。其实是一款蛮不错的产品，但是整个客户端的架构有很大的问题。所以就想着写这样一篇文章，谈谈自己对于一款游戏产品客户端架构的想法。<br><a id="more"></a></p>
+<hr>
+<h2 id="注意项"><a href="#注意项" class="headerlink" title="注意项"></a>注意项</h2><p>下面就罗列一些，客户端开发需要注意的地方。有一些是需要在最初始阶段，就需要考虑的。也有一些是可以在开发过程中，慢慢调整优化的。</p>
+<h3 id="客户端引擎的选择"><a href="#客户端引擎的选择" class="headerlink" title="客户端引擎的选择"></a>客户端引擎的选择</h3><p>首先要谈的是引擎的选择，虽然现在游戏引擎已经非常多了，但是实际上在引擎的选择上，并不是特别多。</p>
+<ol>
+<li>Unity3d：3D手游首选</li>
+<li>Cocos2dx-js：2D手游首选（其实Lua也挺好，在C++绑定上更加方便，但是个人比较喜欢JS，而且很多引擎都支持JS作为开发语言）</li>
+<li>Egret、Cocos2dx-js：2D页游首选（Egret有时间没关注了，不知道现在功能如何，之前看了它的功能，其实并不够强大，但是它的配套工具做的不错，我对它的印象还是挺好的，）</li>
+</ol>
+<hr>
+<h3 id="开发流程"><a href="#开发流程" class="headerlink" title="开发流程"></a>开发流程</h3><p>开发流程关系到整个项目人员的工作安排，如果流程不规范，效率会特别低。比较靠谱的流程大体是下面这个样子：</p>
+<hr>
+<p><strong>策划方案-&gt;美术效果图-&gt;拼UI（最好有专人负责拼界面）-&gt;客户端功能开发</strong><br><em>一般来说服务端会在看到美术效果图之后确定协议，确定完协议之后，客户端就可以开始写协议相关的代码（所以程序基本是在美术效果图之后开始动工，如果策划发现功能不对，只需要在美术效果图这一步进行修改）</em></p>
+<hr>
+<p>还有就是策划方案最好能领先游戏好几个版本。比如：<br>1.0 要做基本养成<br>1.1 要做装备升阶<br>1.2 要做工会系统<br>1.3 要加一个新的杀时间玩法<br>不用特别细，但是一定要领先当前版本，游戏制作人必须清楚的知道要做一个什么样子的游戏。不然需求不明确，美术，程序会反复的修改，耽误效率更影响士气。</p>
+<hr>
+<h3 id="美术、代码资源管理"><a href="#美术、代码资源管理" class="headerlink" title="美术、代码资源管理"></a>美术、代码资源管理</h3><p>游戏用到的美术资源，客户端代码，服务端代码，最好放在不同的仓库下。这样做的原因是：</p>
+<ol>
+<li>可以把每个人的权限区分开，比如美术可能，只需要美术仓库的权限</li>
+<li>不会因为美术资源、策划文档的改动，影响到客户端SVN版本号</li>
+<li>…</li>
+</ol>
+<hr>
+<h3 id="多语言版本的考虑"><a href="#多语言版本的考虑" class="headerlink" title="多语言版本的考虑"></a>多语言版本的考虑</h3><p>现在游戏行业竞争特别激烈，某一题材的游戏，在大陆不火爆，但是可能在东南亚，或者北美就很吃香，所以很多游戏都有语言版本。<br>游戏多语言版本的考虑，会增加非常多的工作量，所以在游戏早期，一定要考虑好。<br><strong>多语言版本中文字方面主要包括：</strong></p>
+<ol>
+<li>代码中的动态文字</li>
+<li>策划表里面的文字</li>
+<li>UI编辑器编辑的文字</li>
+<li>UI中的文字图片。<br>（可能还有其它文字，比如运营活动之类。同时UI布局样式也是需要考虑的）</li>
+</ol>
+<p>这些文字的规范一定要定制好，方便后期替换。大体的规则就是把这些文字最终都导入到一张（或几张）文字表里面，后期通过替换文字表就可以直接出一个新的语言包。这里面文字图片是比较特殊的，但是也可以通过给文字图片加前缀的方式来区分是否要替换。</p>
+<hr>
+<h3 id="游戏中引导和战斗模块的设计"><a href="#游戏中引导和战斗模块的设计" class="headerlink" title="游戏中引导和战斗模块的设计"></a>游戏中引导和战斗模块的设计</h3><p>这两个模块如果一开始设计的不好，那么到后期，前者会变得很难维护，后者变得很难扩展。<br>强制引导部分如果代码出问题，那玩家基本就是直接流失了。<br>而战斗模块，如果一款游戏对战斗要求比较高，那么战斗逻辑的扩展性一定要非常强。（比如策划突然想到一个技能：”灼伤”，效果: 人物攻击时有30%的概率，让敌方进入灼伤状态：每秒扣100血，持续10秒。 程序这边总不能说不支持这种情况，或者说要花很长时间改代码结构）</p>
+<hr>
+<h3 id="游戏更新机制"><a href="#游戏更新机制" class="headerlink" title="游戏更新机制"></a>游戏更新机制</h3><p>这也是重点，现在越来越多的手游采用脚本开发，极大的简化了游戏的更新流程，不再需要重新发布。一般来说游戏会有c++代码、脚本代码、资源文件三个版本号。<br>更新这块有很多细节点，比如：如何判断客户端当前资源是否已经是最新的，就有不少值得注意的地方（当发布了一个新包到appstore，用户通过更新来实现安装的操作，不会清空原有的下载资源）。</p>
+<hr>
+<h3 id="图片内存优化"><a href="#图片内存优化" class="headerlink" title="图片内存优化"></a>图片内存优化</h3><p>游戏内存优化的解决方案，网上已经很多了，这里就不展开说了。</p>
+<hr>
+<h3 id="传输协议"><a href="#传输协议" class="headerlink" title="传输协议"></a>传输协议</h3><p>在http和socket中选通讯方式，我更加倾向于socket。通过socket来传输二进制数据流是非常节省的，估计是用http来传json这种方式的1/4~1/3。而且socket可以让服务端主动发送消息给客户端，唯一值得注意的，就是断线重连这一块（iPhone退到后台就自动断线了）。</p>
+<hr>
+<h3 id="客户端UI的适配问题"><a href="#客户端UI的适配问题" class="headerlink" title="客户端UI的适配问题"></a>客户端UI的适配问题</h3><p>这是一个很大的问题，不管采用哪种都不是特别完美，所以具体的方案的和美术设计挂钩。</p>
+<h3 id="Android适配"><a href="#Android适配" class="headerlink" title="Android适配"></a>Android适配</h3><p>由于Android机型多种多样，我们的游戏在不同的Android设备上的表现可能各不相同。比较容易出现的大概是以下几点：</p>
+<ol>
+<li>图片导致的问题：一般来说一张图片的大小不要超过1024*1024（模型Android机型的opengl不支持更大的尺寸）</li>
+<li>内存问题</li>
+<li>…</li>
+</ol>
+<hr>
+<h3 id="场景管理、弹窗管理"><a href="#场景管理、弹窗管理" class="headerlink" title="场景管理、弹窗管理"></a>场景管理、弹窗管理</h3><p>我比较推荐将场景、弹窗区分开来，用两个管理器来控制它们的显示和切换。</p>
+<hr>
+<h3 id="消息触发机制"><a href="#消息触发机制" class="headerlink" title="消息触发机制"></a>消息触发机制</h3><p>一个方便的消息触发机制，可以让代码结构更加清晰。一般来说这种消息机制会采用观察者模式，代码实现都是大同小异：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">addEvent(eventType, callbcak)</span><br><span class="line">trigger(eventType)</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="各种脚本工具"><a href="#各种脚本工具" class="headerlink" title="各种脚本工具"></a>各种脚本工具</h3><p>除了导表之类的必备工具，开发过程中还需要许多各式各样脚本工具，来提高开发效率。如：SVN(GIT)更新以及获取版本号、小图打包成大图、文字提取替换等功能，都可以通过一个脚本来实现。比较推荐python来写，原因主要是跨平台、第三方库比较多。</p>
+<blockquote>
+<p>转载本站文章请注明作者和出处 <a href="http://www.xtutu.me">xtutu.me</a></p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/程序员/" rel="tag"># 程序员</a>
+          
+            <a href="/tags/Client/" rel="tag"># Client</a>
+          
+            <a href="/tags/Game/" rel="tag"># Game</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/coffeescript-javascript-compare/" rel="next" title="CoffeeScript与JavaScript代码对比">
+                <i class="fa fa-chevron-left"></i> CoffeeScript与JavaScript代码对比
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/use-task-queue-in-your-program/" rel="prev" title="在你的程序中加入任务队列">
+                在你的程序中加入任务队列 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/icon.png"
+                alt="xtutu" />
+            
+              <p class="site-author-name" itemprop="name">xtutu</p>
+              <p class="site-description motion-element" itemprop="description">学习|思考|分享</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">65</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/xtutu" target="_blank" title="github">
+                    
+                      <i class="fa fa-fw fa-globe"></i>github</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/xtutu" target="_blank" title="zhihu">
+                    
+                      <i class="fa fa-fw fa-globe"></i>zhihu</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://fangjian0423.github.io/" title="fangjian0423" target="_blank">fangjian0423</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.aha-nstd.com/" title="nstd" target="_blank">nstd</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://cashow.github.io/index.html" title="cashow" target="_blank">cashow</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://zhangwenli.com/" title="羡辙" target="_blank">羡辙</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.plusman.cn/" title="plusman" target="_blank">plusman</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意项"><span class="nav-number">2.</span> <span class="nav-text">注意项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端引擎的选择"><span class="nav-number">2.1.</span> <span class="nav-text">客户端引擎的选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发流程"><span class="nav-number">2.2.</span> <span class="nav-text">开发流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#美术、代码资源管理"><span class="nav-number">2.3.</span> <span class="nav-text">美术、代码资源管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多语言版本的考虑"><span class="nav-number">2.4.</span> <span class="nav-text">多语言版本的考虑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#游戏中引导和战斗模块的设计"><span class="nav-number">2.5.</span> <span class="nav-text">游戏中引导和战斗模块的设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#游戏更新机制"><span class="nav-number">2.6.</span> <span class="nav-text">游戏更新机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片内存优化"><span class="nav-number">2.7.</span> <span class="nav-text">图片内存优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传输协议"><span class="nav-number">2.8.</span> <span class="nav-text">传输协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端UI的适配问题"><span class="nav-number">2.9.</span> <span class="nav-text">客户端UI的适配问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android适配"><span class="nav-number">2.10.</span> <span class="nav-text">Android适配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#场景管理、弹窗管理"><span class="nav-number">2.11.</span> <span class="nav-text">场景管理、弹窗管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消息触发机制"><span class="nav-number">2.12.</span> <span class="nav-text">消息触发机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#各种脚本工具"><span class="nav-number">2.13.</span> <span class="nav-text">各种脚本工具</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xtutu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=60162417";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://xtutu.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://www.xtutu.me/how-to-create-a-good-game-for-client-programmer/';
+          this.page.identifier = 'how-to-create-a-good-game-for-client-programmer/';
+          this.page.title = '一款优秀的游戏产品，客户端所需要考虑的一些问题';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://xtutu.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
