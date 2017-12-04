@@ -58,20 +58,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/universe-civilization-simulation/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.xtutu.me/typescript-javascript-compare/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
     
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
@@ -80,6 +66,20 @@
   
   <url>
     <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/universe-civilization-simulation/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/typescript-javascript-compare/</loc>
     
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     
@@ -107,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/nodejs-require-module-exports/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.531Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/python-script-to-upload-directory-from-windows-to-a-linux-server-achieving-one-click-deployment/</loc>
     
     <lastmod>2017-12-01T07:01:36.531Z</lastmod>
@@ -124,6 +117,20 @@
     <loc>http://www.xtutu.me/influxDB-handbook-finished/</loc>
     
     <lastmod>2017-12-01T07:01:36.531Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/nodejs-require-module-exports/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.531Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/helloworld/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
     
   </url>
   
@@ -142,9 +149,9 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/helloworld/</loc>
+    <loc>http://www.xtutu.me/git-submodule-and-pull-request/</loc>
     
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
+    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
     
   </url>
   
@@ -156,14 +163,7 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/git-submodule-and-pull-request/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.xtutu.me/egret-source-part-render/</loc>
+    <loc>http://www.xtutu.me/egret-source-part-mainloop/</loc>
     
     <lastmod>2017-12-01T07:01:36.528Z</lastmod>
     
@@ -177,7 +177,7 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/egret-source-part-mainloop/</loc>
+    <loc>http://www.xtutu.me/egret-source-part-render/</loc>
     
     <lastmod>2017-12-01T07:01:36.528Z</lastmod>
     
@@ -191,13 +191,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/egret-graphics-draw-optimize/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.527Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/coffeescript-javascript-compare/</loc>
     
     <lastmod>2017-12-01T07:01:36.527Z</lastmod>
@@ -205,14 +198,21 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
+    <loc>http://www.xtutu.me/egret-graphics-draw-optimize/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.527Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/atom-experience/</loc>
     
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/atom-experience/</loc>
+    <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
     
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     
