@@ -75,28 +75,6 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/typescript-javascript-compare/</loc>
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    <data>
-        <display>
-        <title>TypeScript与JavaScript代码对比</title>
-        <pubTime>2015-03-09T17:28:14.000Z</pubTime>
-        
-        <tag>区别</tag>
-         
-        <tag>Egret</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://www.xtutu.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     <data>
@@ -106,6 +84,24 @@
         
         <tag>任务队列</tag>
          
+         
+           
+             
+              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
+    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    <data>
+        <display>
+        <title>做一名“高颜值”的程序员</title>
+        <pubTime>2016-02-18T12:00:00.000Z</pubTime>
+        
          
            
              
@@ -137,17 +133,21 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
+    <loc>http://www.xtutu.me/typescript-javascript-compare/</loc>
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     <data>
         <display>
-        <title>做一名“高颜值”的程序员</title>
-        <pubTime>2016-02-18T12:00:00.000Z</pubTime>
+        <title>TypeScript与JavaScript代码对比</title>
+        <pubTime>2015-03-09T17:28:14.000Z</pubTime>
         
+        <tag>区别</tag>
+         
+        <tag>Egret</tag>
+         
          
            
              
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+              <breadCrumb title="JavaScript" url="http://www.xtutu.me/categories/JavaScript/"/>
           
         </display>
     </data>
@@ -319,26 +319,6 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
-    <data>
-        <display>
-        <title>普通程序员、优秀程序员差距能有多大？！</title>
-        <pubTime>2016-04-18T12:00:00.000Z</pubTime>
-        
-        <tag>程序员</tag>
-         
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.xtutu.me/helloworld/</loc>
     <lastmod>2017-12-01T07:01:36.530Z</lastmod>
     <data>
@@ -357,21 +337,19 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/game-wheel-lottery/</loc>
-    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
+    <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
+    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
     <data>
         <display>
-        <title>游戏中转盘抽奖算法实现</title>
-        <pubTime>2015-04-01T08:00:00.000Z</pubTime>
+        <title>普通程序员、优秀程序员差距能有多大？！</title>
+        <pubTime>2016-04-18T12:00:00.000Z</pubTime>
         
-        <tag>转盘</tag>
-         
-        <tag>代码</tag>
+        <tag>程序员</tag>
          
          
            
              
-              <breadCrumb title="Demo" url="http://www.xtutu.me/categories/Demo/"/>
+              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
           
         </display>
     </data>
@@ -396,6 +374,28 @@
            
              
               <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.xtutu.me/game-wheel-lottery/</loc>
+    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
+    <data>
+        <display>
+        <title>游戏中转盘抽奖算法实现</title>
+        <pubTime>2015-04-01T08:00:00.000Z</pubTime>
+        
+        <tag>转盘</tag>
+         
+        <tag>代码</tag>
+         
+         
+           
+             
+              <breadCrumb title="Demo" url="http://www.xtutu.me/categories/Demo/"/>
           
         </display>
     </data>
@@ -451,6 +451,28 @@
 
     
   <url>
+    <loc>http://www.xtutu.me/egret-source-part-render/</loc>
+    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
+    <data>
+        <display>
+        <title>Egret源码分析-渲染</title>
+        <pubTime>2015-03-19T17:28:14.000Z</pubTime>
+        
+        <tag>Render</tag>
+         
+        <tag>Egret</tag>
+         
+         
+           
+             
+              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xtutu.me/egret-source-part-touch-event/</loc>
     <lastmod>2017-12-01T07:01:36.528Z</lastmod>
     <data>
@@ -467,28 +489,6 @@
         <tag>捕获</tag>
          
         <tag>冒泡</tag>
-         
-         
-           
-             
-              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/egret-source-part-render/</loc>
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
-    <data>
-        <display>
-        <title>Egret源码分析-渲染</title>
-        <pubTime>2015-03-19T17:28:14.000Z</pubTime>
-        
-        <tag>Render</tag>
-         
-        <tag>Egret</tag>
          
          
            
@@ -573,6 +573,28 @@
 
     
   <url>
+    <loc>http://www.xtutu.me/atom-experience/</loc>
+    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
+    <data>
+        <display>
+        <title>Atom使用体验</title>
+        <pubTime>2016-03-14T12:00:00.000Z</pubTime>
+        
+        <tag>atom</tag>
+         
+        <tag>编辑器</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://www.xtutu.me/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xtutu.me/client-oriented-test-and-server-oriented-test/</loc>
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     <data>
@@ -612,28 +634,6 @@
            
              
               <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/atom-experience/</loc>
-    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
-    <data>
-        <display>
-        <title>Atom使用体验</title>
-        <pubTime>2016-03-14T12:00:00.000Z</pubTime>
-        
-        <tag>atom</tag>
-         
-        <tag>编辑器</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="http://www.xtutu.me/categories/%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
