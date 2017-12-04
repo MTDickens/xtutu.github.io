@@ -31,26 +31,6 @@
     
     
   <url>
-    <loc>http://www.xtutu.me/vr-project-demo/</loc>
-    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
-    <data>
-        <display>
-        <title> VR项目-Demo完结</title>
-        <pubTime>2017-02-17T12:00:00.000Z</pubTime>
-        
-        <tag>VR</tag>
-         
-         
-           
-             
-              <breadCrumb title="Demo" url="http://www.xtutu.me/categories/Demo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.xtutu.me/write-hexo-plugin/</loc>
     <lastmod>2017-12-01T07:01:36.535Z</lastmod>
     <data>
@@ -75,6 +55,26 @@
 
     
   <url>
+    <loc>http://www.xtutu.me/vr-project-demo/</loc>
+    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
+    <data>
+        <display>
+        <title> VR项目-Demo完结</title>
+        <pubTime>2017-02-17T12:00:00.000Z</pubTime>
+        
+        <tag>VR</tag>
+         
+         
+           
+             
+              <breadCrumb title="Demo" url="http://www.xtutu.me/categories/Demo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     <data>
@@ -84,24 +84,6 @@
         
         <tag>任务队列</tag>
          
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    <data>
-        <display>
-        <title>做一名“高颜值”的程序员</title>
-        <pubTime>2016-02-18T12:00:00.000Z</pubTime>
-        
          
            
              
@@ -133,6 +115,24 @@
 
     
   <url>
+    <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
+    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    <data>
+        <display>
+        <title>做一名“高颜值”的程序员</title>
+        <pubTime>2016-02-18T12:00:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xtutu.me/typescript-javascript-compare/</loc>
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     <data>
@@ -143,6 +143,30 @@
         <tag>区别</tag>
          
         <tag>Egret</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://www.xtutu.me/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.xtutu.me/the-date-object-in-js/</loc>
+    <lastmod>2017-12-01T07:01:36.533Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript中的Date对象，以及UTC、GMT、时区的关系</title>
+        <pubTime>2015-10-01T10:00:00.000Z</pubTime>
+        
+        <tag>Date</tag>
+         
+        <tag>UTC</tag>
+         
+        <tag>GMT</tag>
          
          
            
@@ -177,30 +201,6 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/the-date-object-in-js/</loc>
-    <lastmod>2017-12-01T07:01:36.533Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript中的Date对象，以及UTC、GMT、时区的关系</title>
-        <pubTime>2015-10-01T10:00:00.000Z</pubTime>
-        
-        <tag>Date</tag>
-         
-        <tag>UTC</tag>
-         
-        <tag>GMT</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://www.xtutu.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.xtutu.me/run-or-walk-in-rain-day/</loc>
     <lastmod>2017-12-01T07:01:36.532Z</lastmod>
     <data>
@@ -214,32 +214,6 @@
            
              
               <breadCrumb title="模拟" url="http://www.xtutu.me/categories/%E6%A8%A1%E6%8B%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/python-script-to-upload-directory-from-windows-to-a-linux-server-achieving-one-click-deployment/</loc>
-    <lastmod>2017-12-01T07:01:36.531Z</lastmod>
-    <data>
-        <display>
-        <title>python脚本从windows上传目录到linux服务器，实现一键部署</title>
-        <pubTime>2015-02-28T17:28:14.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Paramiko</tag>
-         
-        <tag>Linux</tag>
-         
-        <tag>SSH</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://www.xtutu.me/categories/Python/"/>
           
         </display>
     </data>
@@ -295,6 +269,52 @@
 
     
   <url>
+    <loc>http://www.xtutu.me/python-script-to-upload-directory-from-windows-to-a-linux-server-achieving-one-click-deployment/</loc>
+    <lastmod>2017-12-01T07:01:36.531Z</lastmod>
+    <data>
+        <display>
+        <title>python脚本从windows上传目录到linux服务器，实现一键部署</title>
+        <pubTime>2015-02-28T17:28:14.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Paramiko</tag>
+         
+        <tag>Linux</tag>
+         
+        <tag>SSH</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://www.xtutu.me/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
+    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
+    <data>
+        <display>
+        <title>普通程序员、优秀程序员差距能有多大？！</title>
+        <pubTime>2016-04-18T12:00:00.000Z</pubTime>
+        
+        <tag>程序员</tag>
+         
+         
+           
+             
+              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xtutu.me/helloworld/</loc>
     <lastmod>2017-12-01T07:01:36.530Z</lastmod>
     <data>
@@ -330,26 +350,6 @@
            
              
               <breadCrumb title="小结" url="http://www.xtutu.me/categories/%E5%B0%8F%E7%BB%93/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
-    <data>
-        <display>
-        <title>普通程序员、优秀程序员差距能有多大？！</title>
-        <pubTime>2016-04-18T12:00:00.000Z</pubTime>
-        
-        <tag>程序员</tag>
-         
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
           
         </display>
     </data>
@@ -427,6 +427,30 @@
 
     
   <url>
+    <loc>http://www.xtutu.me/egret/</loc>
+    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
+    <data>
+        <display>
+        <title>Egret-Html5-游戏</title>
+        <pubTime>2015-03-02T17:28:14.000Z</pubTime>
+        
+        <tag>Egret</tag>
+         
+        <tag>Html5</tag>
+         
+        <tag>手游</tag>
+         
+         
+           
+             
+              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xtutu.me/egret-source-part-touch-event/</loc>
     <lastmod>2017-12-01T07:01:36.528Z</lastmod>
     <data>
@@ -462,33 +486,9 @@
         <title>Egret源码分析-渲染</title>
         <pubTime>2015-03-19T17:28:14.000Z</pubTime>
         
+        <tag>Egret</tag>
+         
         <tag>Render</tag>
-         
-        <tag>Egret</tag>
-         
-         
-           
-             
-              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/egret/</loc>
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
-    <data>
-        <display>
-        <title>Egret-Html5-游戏</title>
-        <pubTime>2015-03-02T17:28:14.000Z</pubTime>
-        
-        <tag>Egret</tag>
-         
-        <tag>Html5</tag>
-         
-        <tag>手游</tag>
          
          
            
@@ -532,9 +532,9 @@
         <title>Egret Graphics 矢量绘图优化</title>
         <pubTime>2015-04-05T10:00:00.000Z</pubTime>
         
-        <tag>Draw</tag>
-         
         <tag>Render</tag>
+         
+        <tag>Draw</tag>
          
         <tag>Texture</tag>
          
@@ -571,6 +571,26 @@
 
     
   <url>
+    <loc>http://www.xtutu.me/client-oriented-test-and-server-oriented-test/</loc>
+    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
+    <data>
+        <display>
+        <title>面向客户端测试与面向服务端测试</title>
+        <pubTime>2016-04-15T10:00:00.000Z</pubTime>
+        
+        <tag>测试</tag>
+         
+         
+           
+             
+              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     <data>
@@ -585,26 +605,6 @@
         <tag>私钥</tag>
          
         <tag>非对称加密</tag>
-         
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/client-oriented-test-and-server-oriented-test/</loc>
-    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
-    <data>
-        <display>
-        <title>面向客户端测试与面向服务端测试</title>
-        <pubTime>2016-04-15T10:00:00.000Z</pubTime>
-        
-        <tag>测试</tag>
          
          
            
