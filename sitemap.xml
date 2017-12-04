@@ -44,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/write-hexo-plugin/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/vr-project-demo/</loc>
     
     <lastmod>2017-12-01T07:01:36.535Z</lastmod>
@@ -58,16 +51,9 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
+    <loc>http://www.xtutu.me/write-hexo-plugin/</loc>
     
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
     
   </url>
   
@@ -80,6 +66,20 @@
   
   <url>
     <loc>http://www.xtutu.me/typescript-javascript-compare/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
     
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/python-script-to-upload-directory-from-windows-to-a-linux-server-achieving-one-click-deployment/</loc>
+    <loc>http://www.xtutu.me/nodejs-require-module-exports/</loc>
     
     <lastmod>2017-12-01T07:01:36.531Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/nodejs-require-module-exports/</loc>
+    <loc>http://www.xtutu.me/python-script-to-upload-directory-from-windows-to-a-linux-server-achieving-one-click-deployment/</loc>
     
     <lastmod>2017-12-01T07:01:36.531Z</lastmod>
     
@@ -135,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/helloworld/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
     
     <lastmod>2017-12-01T07:01:36.530Z</lastmod>
@@ -149,9 +142,9 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/git-submodule-and-pull-request/</loc>
+    <loc>http://www.xtutu.me/helloworld/</loc>
     
-    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
+    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
     
   </url>
   
@@ -163,7 +156,21 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/egret/</loc>
+    <loc>http://www.xtutu.me/git-submodule-and-pull-request/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/egret-source-part-render/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/egret-source-part-touch-event/</loc>
     
     <lastmod>2017-12-01T07:01:36.528Z</lastmod>
     
@@ -177,14 +184,7 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/egret-source-part-render/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.xtutu.me/egret-source-part-touch-event/</loc>
+    <loc>http://www.xtutu.me/egret/</loc>
     
     <lastmod>2017-12-01T07:01:36.528Z</lastmod>
     
@@ -205,7 +205,7 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/add-lua-support-for-cplusplus-project/</loc>
+    <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
     
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     
@@ -226,7 +226,7 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
+    <loc>http://www.xtutu.me/add-lua-support-for-cplusplus-project/</loc>
     
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     
