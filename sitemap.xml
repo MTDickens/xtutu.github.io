@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.xtutu.me/the-date-object-in-js/</loc>
+    
+    <lastmod>2018-04-02T07:33:03.276Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.xtutu.me/cmd-tools-in-windows/</loc>
     
     <lastmod>2017-12-01T07:04:01.513Z</lastmod>
@@ -44,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/write-hexo-plugin/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/vr-project-demo/</loc>
     
     <lastmod>2017-12-01T07:01:36.535Z</lastmod>
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
+    <loc>http://www.xtutu.me/write-hexo-plugin/</loc>
     
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/universe-civilization-simulation/</loc>
+    <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
     
     <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     
@@ -86,9 +86,9 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/the-date-object-in-js/</loc>
+    <loc>http://www.xtutu.me/universe-civilization-simulation/</loc>
     
-    <lastmod>2017-12-01T07:01:36.533Z</lastmod>
+    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
     
   </url>
   
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/influxDB-handbook-finished/</loc>
+    <loc>http://www.xtutu.me/nodejs-require-module-exports/</loc>
     
     <lastmod>2017-12-01T07:01:36.531Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/nodejs-require-module-exports/</loc>
+    <loc>http://www.xtutu.me/influxDB-handbook-finished/</loc>
     
     <lastmod>2017-12-01T07:01:36.531Z</lastmod>
     
@@ -128,13 +128,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/helloworld/</loc>
     
     <lastmod>2017-12-01T07:01:36.530Z</lastmod>
@@ -143,6 +136,13 @@
   
   <url>
     <loc>http://www.xtutu.me/how-to-create-a-good-game-for-client-programmer/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
     
     <lastmod>2017-12-01T07:01:36.530Z</lastmod>
     
@@ -163,20 +163,6 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/egret-source-part-mainloop/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.xtutu.me/egret/</loc>
-    
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.xtutu.me/egret-source-part-touch-event/</loc>
     
     <lastmod>2017-12-01T07:01:36.528Z</lastmod>
@@ -191,14 +177,28 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/coffeescript-javascript-compare/</loc>
+    <loc>http://www.xtutu.me/egret/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/egret-source-part-mainloop/</loc>
+    
+    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.xtutu.me/egret-graphics-draw-optimize/</loc>
     
     <lastmod>2017-12-01T07:01:36.527Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/egret-graphics-draw-optimize/</loc>
+    <loc>http://www.xtutu.me/coffeescript-javascript-compare/</loc>
     
     <lastmod>2017-12-01T07:01:36.527Z</lastmod>
     
@@ -219,14 +219,14 @@
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
+    <loc>http://www.xtutu.me/add-lua-support-for-cplusplus-project/</loc>
     
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.xtutu.me/add-lua-support-for-cplusplus-project/</loc>
+    <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
     
     <lastmod>2017-12-01T07:01:36.526Z</lastmod>
     

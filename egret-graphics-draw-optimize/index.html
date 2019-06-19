@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Render,Draw,Texture," />
+  <meta name="keywords" content="Draw,Render,Texture," />
 
 
 
@@ -82,7 +82,7 @@
 
 
 <meta name="description" content="前言在看了一些Egret的源码之后，就决定动手写一个画图Demo。但是在写的过程中，发现：每当画的矢量图有点多的时候，绘制的帧数马上就降下来了，很快就卡的不行了。。。于是断点查看了下，发现是因为Egret在用graphics绘制的时候，它会把所有的点都储存下来。等到下一帧的时候就重新绘制一遍。可以想想，当绘制的点有上万">
-<meta name="keywords" content="Render,Draw,Texture">
+<meta name="keywords" content="Draw,Render,Texture">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Egret Graphics 矢量绘图优化">
 <meta property="og:url" content="http://www.xtutu.me/egret-graphics-draw-optimize/index.html">
@@ -411,9 +411,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Render/" rel="tag"># Render</a>
-          
             <a href="/tags/Draw/" rel="tag"># Draw</a>
+          
+            <a href="/tags/Render/" rel="tag"># Render</a>
           
             <a href="/tags/Texture/" rel="tag"># Texture</a>
           
@@ -638,14 +638,6 @@ var jiathis_config={
                     <a href="http://cashow.github.io/index.html" title="cashow" target="_blank">cashow</a>
                   </li>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="http://zhangwenli.com/" title="羡辙" target="_blank">羡辙</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://www.plusman.cn/" title="plusman" target="_blank">plusman</a>
-                  </li>
-                
               </ul>
             </div>
           
@@ -685,7 +677,7 @@ var jiathis_config={
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
