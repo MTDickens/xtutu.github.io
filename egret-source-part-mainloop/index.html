@@ -85,11 +85,11 @@
 <meta name="keywords" content="Egret,主循环,解析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Egret源码分析-主循环">
-<meta property="og:url" content="http://www.xtutu.me/egret-source-part-mainloop/index.html">
+<meta property="og:url" content="http://xtutu.github.io/egret-source-part-mainloop/index.html">
 <meta property="og:site_name" content="xtutu">
 <meta property="og:description" content="前言学习一个游戏引擎，最好的做法就是先看它的主循环！了解主循环，基本就了解了引擎的各个模块的执行方式。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-01T07:01:36.528Z">
+<meta property="og:updated_time" content="2020-03-15T11:05:30.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Egret源码分析-主循环">
 <meta name="twitter:description" content="前言学习一个游戏引擎，最好的做法就是先看它的主循环！了解主循环，基本就了解了引擎的各个模块的执行方式。">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://www.xtutu.me/egret-source-part-mainloop/"/>
+  <link rel="canonical" href="http://xtutu.github.io/egret-source-part-mainloop/"/>
 
 
 
@@ -274,7 +274,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.xtutu.me/egret-source-part-mainloop/">
+    <link itemprop="mainEntityOfPage" href="http://xtutu.github.io/egret-source-part-mainloop/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xtutu">
@@ -380,7 +380,7 @@
 <h2 id="MainContext-run方法"><a href="#MainContext-run方法" class="headerlink" title="MainContext.run方法"></a>MainContext.run方法</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">MainContext.prototype.run = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    egret.Ticker.getInstance().run();</span><br><span class="line">	<span class="comment">// 在Ticker中注册:主循环函数，优先级最低（最后被执行）</span></span><br><span class="line">    egret.Ticker.getInstance().register(<span class="keyword">this</span>.renderLoop, <span class="keyword">this</span>, <span class="built_in">Number</span>.NEGATIVE_INFINITY);</span><br><span class="line">	<span class="comment">// 每一帧刚开始被触发的函数，优先级最高（最先被执行）    </span></span><br><span class="line">	egret.Ticker.getInstance().register(<span class="keyword">this</span>.broadcastEnterFrame, <span class="keyword">this</span>, <span class="built_in">Number</span>.POSITIVE_INFINITY);</span><br><span class="line">    <span class="keyword">this</span>.touchContext.run();</span><br><span class="line">	<span class="comment">// 左上角显示FPS之类的文字，就是靠它了</span></span><br><span class="line">    <span class="keyword">this</span>._profileInstance = egret.Profiler.getInstance();</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h2 id="MainContext-renderLoop方法"><a href="#MainContext-renderLoop方法" class="headerlink" title="MainContext.renderLoop方法"></a>MainContext.renderLoop方法</h2><p>这个就是本篇文章的主角了！游戏的主循环。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">MainContext.prototype.renderLoop = <span class="function"><span class="keyword">function</span> (<span class="params">frameTime</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 延迟到渲染开始之前执行的函数，可以通过egret.callLater来注册</span></span><br><span class="line">    <span class="keyword">if</span> (egret.__callLaterFunctionList.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> functionList = egret.__callLaterFunctionList;</span><br><span class="line">        egret.__callLaterFunctionList = [];</span><br><span class="line">        <span class="keyword">var</span> thisList = egret.__callLaterThisList;</span><br><span class="line">        egret.__callLaterThisList = [];</span><br><span class="line">        <span class="keyword">var</span> argsList = egret.__callLaterArgsList;</span><br><span class="line">        egret.__callLaterArgsList = [];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> stage = <span class="keyword">this</span>.stage;</span><br><span class="line">	<span class="comment">// 派发egret.Event.RENDER事件</span></span><br><span class="line">    <span class="keyword">var</span> event = MainContext.cachedEvent;</span><br><span class="line">    event._type = egret.Event.RENDER;</span><br><span class="line">    <span class="keyword">this</span>.dispatchEvent(event);</span><br><span class="line">    <span class="keyword">if</span> (egret.Stage._invalidateRenderFlag) &#123;</span><br><span class="line">        <span class="keyword">this</span>.broadcastRender();</span><br><span class="line">        egret.Stage._invalidateRenderFlag = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (functionList) &#123;</span><br><span class="line">        <span class="keyword">this</span>.doCallLaterList(functionList, thisList, argsList);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (egret.__callAsyncFunctionList.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.doCallAsyncList();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 执行渲染（渲染这部分，会单独写一篇文章介绍）</span></span><br><span class="line">    <span class="keyword">var</span> context = <span class="keyword">this</span>.rendererContext;</span><br><span class="line">    context.onRenderStart();</span><br><span class="line">    context.clearScreen();</span><br><span class="line">    MainContext.__DRAW_COMMAND_LIST = [];</span><br><span class="line">    MainContext._renderLoopPhase = <span class="string">"updateTransform"</span>;</span><br><span class="line">    stage._updateTransform();</span><br><span class="line">    MainContext._renderLoopPhase = <span class="string">"draw"</span>;</span><br><span class="line">    event._type = egret.Event.FINISH_UPDATE_TRANSFORM;</span><br><span class="line">    <span class="keyword">this</span>.dispatchEvent(event);</span><br><span class="line">    <span class="keyword">if</span> (MainContext.__use_new_draw) &#123;</span><br><span class="line">        <span class="keyword">this</span>._draw(context);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        stage._draw(context);</span><br><span class="line">    &#125;</span><br><span class="line">    event._type = egret.Event.FINISH_RENDER;</span><br><span class="line">    <span class="keyword">this</span>.dispatchEvent(event);</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>._profileInstance._isRunning) &#123;</span><br><span class="line">        <span class="keyword">this</span>._profileInstance._drawProfiler();</span><br><span class="line">    &#125;</span><br><span class="line">    context.onRenderFinish();</span><br><span class="line">	<span class="comment">//~ 渲染结束</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://www.xtutu.me">xtutu.me</a></p>
+<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://xtutu.github.io">xtutu.me</a></p>
 </blockquote>
 
       
@@ -665,7 +665,7 @@ var jiathis_config={
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -824,7 +824,7 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.xtutu.me/egret-source-part-mainloop/';
+          this.page.url = 'http://xtutu.github.io/egret-source-part-mainloop/';
           this.page.identifier = 'egret-source-part-mainloop/';
           this.page.title = 'Egret源码分析-主循环';
         };

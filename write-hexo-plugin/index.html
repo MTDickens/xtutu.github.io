@@ -85,17 +85,17 @@
 <meta name="keywords" content="Hexo,Plugins,分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编写Hexo插件">
-<meta property="og:url" content="http://www.xtutu.me/write-hexo-plugin/index.html">
+<meta property="og:url" content="http://xtutu.github.io/write-hexo-plugin/index.html">
 <meta property="og:site_name" content="xtutu">
 <meta property="og:description" content="前言Hexo已经用了大半年，真的很符合我写博客的种种需求。不过最近在使用Hexo中的skip_render标签时，遇到了一些问题。该标签下面的目录，还是会经过Hexo的处理，并不是我想像中的那样：直接把这些资源复制到public目录下面。当我执行“hexo g”命令时，对于某些文件，Hexo中的nunjucks库会报错。于是就想着自己写一个复制资源的插件。（实际上对于这种比较简单的功能，通过写脚本">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.xtutu.me/img/20151223165539.jpg">
-<meta property="og:image" content="http://www.xtutu.me/img/20151223175052.jpg">
-<meta property="og:updated_time" content="2017-12-01T07:01:36.535Z">
+<meta property="og:image" content="http://xtutu.github.io/img/20151223165539.jpg">
+<meta property="og:image" content="http://xtutu.github.io/img/20151223175052.jpg">
+<meta property="og:updated_time" content="2020-03-15T11:05:30.610Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="编写Hexo插件">
 <meta name="twitter:description" content="前言Hexo已经用了大半年，真的很符合我写博客的种种需求。不过最近在使用Hexo中的skip_render标签时，遇到了一些问题。该标签下面的目录，还是会经过Hexo的处理，并不是我想像中的那样：直接把这些资源复制到public目录下面。当我执行“hexo g”命令时，对于某些文件，Hexo中的nunjucks库会报错。于是就想着自己写一个复制资源的插件。（实际上对于这种比较简单的功能，通过写脚本">
-<meta name="twitter:image" content="http://www.xtutu.me/img/20151223165539.jpg">
+<meta name="twitter:image" content="http://xtutu.github.io/img/20151223165539.jpg">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://www.xtutu.me/write-hexo-plugin/"/>
+  <link rel="canonical" href="http://xtutu.github.io/write-hexo-plugin/"/>
 
 
 
@@ -277,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.xtutu.me/write-hexo-plugin/">
+    <link itemprop="mainEntityOfPage" href="http://xtutu.github.io/write-hexo-plugin/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xtutu">
@@ -396,7 +396,7 @@
 <h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>更多功能可以参考node_modules目录下其它插件的写法。<br>以及官方文档：<br><a href="https://hexo.io/docs/plugins.html" target="_blank" rel="noopener">https://hexo.io/docs/plugins.html</a><br><a href="https://hexo.io/api/events.html" target="_blank" rel="noopener">https://hexo.io/api/events.html</a></p>
 <p>最后附上一个执行复制的python脚本。。。毕竟还是写脚本方便。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> shutil </span><br><span class="line"></span><br><span class="line">currentPath = os.path.realpath(__file__)</span><br><span class="line">currentPath = os.path.dirname(currentPath)</span><br><span class="line"><span class="keyword">print</span> (currentPath)</span><br><span class="line">dstDir = currentPath + <span class="string">"\\public\\game"</span></span><br><span class="line">srcDir = currentPath + <span class="string">"\\copyDate"</span></span><br><span class="line"><span class="comment"># print dstDir</span></span><br><span class="line"></span><br><span class="line">cmd = os.popen(<span class="string">"hexo clean"</span>)</span><br><span class="line">cmdInfo = cmd.read()</span><br><span class="line"><span class="keyword">print</span> cmdInfo</span><br><span class="line"></span><br><span class="line">cmd = os.popen(<span class="string">"hexo g"</span>)</span><br><span class="line">cmdInfo = cmd.read()</span><br><span class="line"><span class="keyword">print</span> cmdInfo</span><br><span class="line"></span><br><span class="line">shutil.copytree(srcDir,dstDir) </span><br><span class="line"></span><br><span class="line">cmd = os.popen(<span class="string">"hexo d"</span>)</span><br><span class="line">cmdInfo = cmd.read()</span><br><span class="line"><span class="keyword">print</span> cmdInfo </span><br><span class="line"></span><br><span class="line">raw_input(<span class="string">"Press ENTER to exit"</span>)</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://www.xtutu.me">xtutu.me</a></p>
+<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://xtutu.github.io">xtutu.me</a></p>
 </blockquote>
 
       
@@ -681,7 +681,7 @@ var jiathis_config={
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -840,7 +840,7 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.xtutu.me/write-hexo-plugin/';
+          this.page.url = 'http://xtutu.github.io/write-hexo-plugin/';
           this.page.identifier = 'write-hexo-plugin/';
           this.page.title = '编写Hexo插件';
         };

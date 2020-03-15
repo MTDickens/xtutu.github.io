@@ -85,11 +85,11 @@
 <meta name="keywords" content="Draw,Render,Texture">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Egret Graphics 矢量绘图优化">
-<meta property="og:url" content="http://www.xtutu.me/egret-graphics-draw-optimize/index.html">
+<meta property="og:url" content="http://xtutu.github.io/egret-graphics-draw-optimize/index.html">
 <meta property="og:site_name" content="xtutu">
 <meta property="og:description" content="前言在看了一些Egret的源码之后，就决定动手写一个画图Demo。但是在写的过程中，发现：每当画的矢量图有点多的时候，绘制的帧数马上就降下来了，很快就卡的不行了。。。于是断点查看了下，发现是因为Egret在用graphics绘制的时候，它会把所有的点都储存下来。等到下一帧的时候就重新绘制一遍。可以想想，当绘制的点有上万个，甚至更多的时候，这样重新绘制是很不合理的！所以必须得想办法优化下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-01T07:01:36.527Z">
+<meta property="og:updated_time" content="2020-03-15T11:05:30.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Egret Graphics 矢量绘图优化">
 <meta name="twitter:description" content="前言在看了一些Egret的源码之后，就决定动手写一个画图Demo。但是在写的过程中，发现：每当画的矢量图有点多的时候，绘制的帧数马上就降下来了，很快就卡的不行了。。。于是断点查看了下，发现是因为Egret在用graphics绘制的时候，它会把所有的点都储存下来。等到下一帧的时候就重新绘制一遍。可以想想，当绘制的点有上万个，甚至更多的时候，这样重新绘制是很不合理的！所以必须得想办法优化下。">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://www.xtutu.me/egret-graphics-draw-optimize/"/>
+  <link rel="canonical" href="http://xtutu.github.io/egret-graphics-draw-optimize/"/>
 
 
 
@@ -274,7 +274,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.xtutu.me/egret-graphics-draw-optimize/">
+    <link itemprop="mainEntityOfPage" href="http://xtutu.github.io/egret-graphics-draw-optimize/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xtutu">
@@ -392,7 +392,7 @@
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这两天把引擎升到了2.5.0版本，很多接口都不能用了（原先的是1.6版本）。所以把这个Demo也更新了下。<br>这个版本的引擎已经做了不少渲染方面的优化了，但是脏矩形刷新的时候，会闪屏。而且2.5.0的RenderTexture还有问题。。。升级到2.5.3就修复了（不过用起来，还是感觉不大对？触摸位置，以及渲染的位置都有问题！懒得去看源码了）</p>
 <h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/xtutu/egret-demo" target="_blank" rel="noopener">https://github.com/xtutu/egret-demo</a></p>
 <blockquote>
-<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://www.xtutu.me">xtutu.me</a></p>
+<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://xtutu.github.io">xtutu.me</a></p>
 </blockquote>
 
       
@@ -677,7 +677,7 @@ var jiathis_config={
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -836,7 +836,7 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.xtutu.me/egret-graphics-draw-optimize/';
+          this.page.url = 'http://xtutu.github.io/egret-graphics-draw-optimize/';
           this.page.identifier = 'egret-graphics-draw-optimize/';
           this.page.title = 'Egret Graphics 矢量绘图优化';
         };

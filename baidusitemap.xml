@@ -4,23 +4,23 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/the-date-object-in-js/</loc>
-    <lastmod>2018-04-02T07:33:03.276Z</lastmod>
+    <loc>http://xtutu.github.io/how-to-create-a-good-game-for-client-programmer/</loc>
+    <lastmod>2020-03-15T11:05:30.968Z</lastmod>
     <data>
         <display>
-        <title>JavaScript中的Date对象，以及UTC、GMT、时区的关系</title>
-        <pubTime>2015-10-01T10:00:00.000Z</pubTime>
+        <title>一款优秀的游戏产品，客户端所需要考虑的一些问题</title>
+        <pubTime>2015-07-19T10:00:00.000Z</pubTime>
         
-        <tag>Date</tag>
+        <tag>程序员</tag>
          
-        <tag>UTC</tag>
+        <tag>Client</tag>
          
-        <tag>GMT</tag>
+        <tag>Game</tag>
          
          
            
              
-              <breadCrumb title="JavaScript" url="http://www.xtutu.me/categories/JavaScript/"/>
+              <breadCrumb title="小结" url="http://xtutu.github.io/categories/%E5%B0%8F%E7%BB%93/"/>
           
         </display>
     </data>
@@ -28,139 +28,8 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/cmd-tools-in-windows/</loc>
-    <lastmod>2017-12-01T07:04:01.513Z</lastmod>
-    <data>
-        <display>
-        <title>Windows下的命令行工具 —— ConEmu + Babun</title>
-        <pubTime>2016-11-26T00:30:00.000Z</pubTime>
-        
-        <tag>Babun</tag>
-         
-        <tag>ConEmu</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="http://www.xtutu.me/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-    
-    
-  <url>
-    <loc>http://www.xtutu.me/vr-project-demo/</loc>
-    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
-    <data>
-        <display>
-        <title> VR项目-Demo完结</title>
-        <pubTime>2017-02-17T12:00:00.000Z</pubTime>
-        
-        <tag>VR</tag>
-         
-         
-           
-             
-              <breadCrumb title="Demo" url="http://www.xtutu.me/categories/Demo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/write-hexo-plugin/</loc>
-    <lastmod>2017-12-01T07:01:36.535Z</lastmod>
-    <data>
-        <display>
-        <title>编写Hexo插件</title>
-        <pubTime>2015-12-20T02:00:00.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Plugins</tag>
-         
-        <tag>分析</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://www.xtutu.me/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/use-task-queue-in-your-program/</loc>
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    <data>
-        <display>
-        <title>在你的程序中加入任务队列</title>
-        <pubTime>2015-09-23T11:00:00.000Z</pubTime>
-        
-        <tag>任务队列</tag>
-         
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    <data>
-        <display>
-        <title>做一名“高颜值”的程序员</title>
-        <pubTime>2016-02-18T12:00:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/typescript-javascript-compare/</loc>
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
-    <data>
-        <display>
-        <title>TypeScript与JavaScript代码对比</title>
-        <pubTime>2015-03-09T17:28:14.000Z</pubTime>
-        
-        <tag>区别</tag>
-         
-        <tag>Egret</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://www.xtutu.me/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/universe-civilization-simulation/</loc>
-    <lastmod>2017-12-01T07:01:36.534Z</lastmod>
+    <loc>http://xtutu.github.io/universe-civilization-simulation/</loc>
+    <lastmod>2020-03-15T11:05:30.732Z</lastmod>
     <data>
         <display>
         <title>「宇宙点状文明」模拟程序</title>
@@ -171,7 +40,7 @@
          
            
              
-              <breadCrumb title="模拟" url="http://www.xtutu.me/categories/%E6%A8%A1%E6%8B%9F/"/>
+              <breadCrumb title="模拟" url="http://xtutu.github.io/categories/%E6%A8%A1%E6%8B%9F/"/>
           
         </display>
     </data>
@@ -179,21 +48,23 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/think-about-server/</loc>
-    <lastmod>2017-12-01T07:01:36.533Z</lastmod>
+    <loc>http://xtutu.github.io/egret/</loc>
+    <lastmod>2020-03-15T11:05:30.661Z</lastmod>
     <data>
         <display>
-        <title>服务端架构的一些思考</title>
-        <pubTime>2015-10-25T10:00:00.000Z</pubTime>
+        <title>Egret-Html5-游戏</title>
+        <pubTime>2015-03-02T17:28:14.000Z</pubTime>
         
-        <tag>Server</tag>
+        <tag>Egret</tag>
          
-        <tag>总结</tag>
+        <tag>Html5</tag>
+         
+        <tag>手游</tag>
          
          
            
              
-              <breadCrumb title="小结" url="http://www.xtutu.me/categories/%E5%B0%8F%E7%BB%93/"/>
+              <breadCrumb title="Egret" url="http://xtutu.github.io/categories/Egret/"/>
           
         </display>
     </data>
@@ -201,8 +72,66 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/run-or-walk-in-rain-day/</loc>
-    <lastmod>2017-12-01T07:01:36.532Z</lastmod>
+    <loc>http://xtutu.github.io/about-human-future/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
+    <data>
+        <display>
+        <title>走出地球，飞向太空！</title>
+        <pubTime>2016-02-17T12:57:46.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="碎语" url="http://xtutu.github.io/categories/%E7%A2%8E%E8%AF%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/game-wheel-lottery/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
+    <data>
+        <display>
+        <title>游戏中转盘抽奖算法实现</title>
+        <pubTime>2015-04-01T08:00:00.000Z</pubTime>
+        
+        <tag>转盘</tag>
+         
+        <tag>代码</tag>
+         
+         
+           
+             
+              <breadCrumb title="Demo" url="http://xtutu.github.io/categories/Demo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/helloworld/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
+    <data>
+        <display>
+        <title>HelloWorld</title>
+        <pubTime>2015-02-01T12:57:46.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Demo" url="http://xtutu.github.io/categories/Demo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/run-or-walk-in-rain-day/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
     <data>
         <display>
         <title>雨天，跑与走哪个淋雨少？模拟一下你就知道</title>
@@ -213,7 +142,7 @@
          
            
              
-              <breadCrumb title="模拟" url="http://www.xtutu.me/categories/%E6%A8%A1%E6%8B%9F/"/>
+              <breadCrumb title="模拟" url="http://xtutu.github.io/categories/%E6%A8%A1%E6%8B%9F/"/>
           
         </display>
     </data>
@@ -221,56 +150,8 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/nodejs-require-module-exports/</loc>
-    <lastmod>2017-12-01T07:01:36.531Z</lastmod>
-    <data>
-        <display>
-        <title>NodeJS中require，module，exports的关系</title>
-        <pubTime>2015-12-31T12:00:00.000Z</pubTime>
-        
-        <tag>机制</tag>
-         
-        <tag>原理</tag>
-         
-        <tag>依赖</tag>
-         
-         
-           
-             
-              <breadCrumb title="NodeJS" url="http://www.xtutu.me/categories/NodeJS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/influxDB-handbook-finished/</loc>
-    <lastmod>2017-12-01T07:01:36.531Z</lastmod>
-    <data>
-        <display>
-        <title>InfluxDB简明手册 初稿完成了！</title>
-        <pubTime>2016-02-26T12:00:00.000Z</pubTime>
-        
-        <tag>InfluxDB</tag>
-         
-        <tag>教程</tag>
-         
-        <tag>文档</tag>
-         
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/python-script-to-upload-directory-from-windows-to-a-linux-server-achieving-one-click-deployment/</loc>
-    <lastmod>2017-12-01T07:01:36.531Z</lastmod>
+    <loc>http://xtutu.github.io/python-script-to-upload-directory-from-windows-to-a-linux-server-achieving-one-click-deployment/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
     <data>
         <display>
         <title>python脚本从windows上传目录到linux服务器，实现一键部署</title>
@@ -287,7 +168,7 @@
          
            
              
-              <breadCrumb title="Python" url="http://www.xtutu.me/categories/Python/"/>
+              <breadCrumb title="Python" url="http://xtutu.github.io/categories/Python/"/>
           
         </display>
     </data>
@@ -295,41 +176,21 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/helloworld/</loc>
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
+    <loc>http://xtutu.github.io/think-about-server/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
     <data>
         <display>
-        <title>HelloWorld</title>
-        <pubTime>2015-02-01T12:57:46.000Z</pubTime>
+        <title>服务端架构的一些思考</title>
+        <pubTime>2015-10-25T10:00:00.000Z</pubTime>
         
+        <tag>Server</tag>
          
-           
-             
-              <breadCrumb title="Demo" url="http://www.xtutu.me/categories/Demo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/how-to-create-a-good-game-for-client-programmer/</loc>
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
-    <data>
-        <display>
-        <title>一款优秀的游戏产品，客户端所需要考虑的一些问题</title>
-        <pubTime>2015-07-19T10:00:00.000Z</pubTime>
-        
-        <tag>程序员</tag>
-         
-        <tag>Client</tag>
-         
-        <tag>Game</tag>
+        <tag>总结</tag>
          
          
            
              
-              <breadCrumb title="小结" url="http://www.xtutu.me/categories/%E5%B0%8F%E7%BB%93/"/>
+              <breadCrumb title="小结" url="http://xtutu.github.io/categories/%E5%B0%8F%E7%BB%93/"/>
           
         </display>
     </data>
@@ -337,19 +198,23 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/good-coder-and-bad-coder/</loc>
-    <lastmod>2017-12-01T07:01:36.530Z</lastmod>
+    <loc>http://xtutu.github.io/the-date-object-in-js/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
     <data>
         <display>
-        <title>普通程序员、优秀程序员差距能有多大？！</title>
-        <pubTime>2016-04-18T12:00:00.000Z</pubTime>
+        <title>JavaScript中的Date对象，以及UTC、GMT、时区的关系</title>
+        <pubTime>2015-10-01T10:00:00.000Z</pubTime>
         
-        <tag>程序员</tag>
+        <tag>Date</tag>
+         
+        <tag>UTC</tag>
+         
+        <tag>GMT</tag>
          
          
            
              
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+              <breadCrumb title="JavaScript" url="http://xtutu.github.io/categories/JavaScript/"/>
           
         </display>
     </data>
@@ -357,23 +222,37 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/git-submodule-and-pull-request/</loc>
-    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
+    <loc>http://xtutu.github.io/to-be-a-high-level-of-appearance-of-the-programmer/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
     <data>
         <display>
-        <title>Git submodule & pull request ! 让我们啃下这块骨头！</title>
-        <pubTime>2016-12-03T00:30:00.000Z</pubTime>
+        <title>做一名“高颜值”的程序员</title>
+        <pubTime>2016-02-18T12:00:00.000Z</pubTime>
         
-        <tag>git</tag>
          
-        <tag>Submodule</tag>
-         
-        <tag>pull request</tag>
+           
+             
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/use-task-queue-in-your-program/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
+    <data>
+        <display>
+        <title>在你的程序中加入任务队列</title>
+        <pubTime>2015-09-23T11:00:00.000Z</pubTime>
+        
+        <tag>任务队列</tag>
          
          
            
              
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
           
         </display>
     </data>
@@ -381,21 +260,19 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/game-wheel-lottery/</loc>
-    <lastmod>2017-12-01T07:01:36.529Z</lastmod>
+    <loc>http://xtutu.github.io/vr-project-demo/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
     <data>
         <display>
-        <title>游戏中转盘抽奖算法实现</title>
-        <pubTime>2015-04-01T08:00:00.000Z</pubTime>
+        <title> VR项目-Demo完结</title>
+        <pubTime>2017-02-17T12:00:00.000Z</pubTime>
         
-        <tag>转盘</tag>
-         
-        <tag>代码</tag>
+        <tag>VR</tag>
          
          
            
              
-              <breadCrumb title="Demo" url="http://www.xtutu.me/categories/Demo/"/>
+              <breadCrumb title="Demo" url="http://xtutu.github.io/categories/Demo/"/>
           
         </display>
     </data>
@@ -403,8 +280,238 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/egret-source-part-touch-event/</loc>
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
+    <loc>http://xtutu.github.io/typescript-javascript-compare/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
+    <data>
+        <display>
+        <title>TypeScript与JavaScript代码对比</title>
+        <pubTime>2015-03-09T17:28:14.000Z</pubTime>
+        
+        <tag>区别</tag>
+         
+        <tag>Egret</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://xtutu.github.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/write-hexo-plugin/</loc>
+    <lastmod>2020-03-15T11:05:30.610Z</lastmod>
+    <data>
+        <display>
+        <title>编写Hexo插件</title>
+        <pubTime>2015-12-20T02:00:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Plugins</tag>
+         
+        <tag>分析</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://xtutu.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/about-rsa-public-key-private-key/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>关于RSA、公钥、私钥、加密、签名的那些概念</title>
+        <pubTime>2016-01-28T11:00:00.000Z</pubTime>
+        
+        <tag>RSA</tag>
+         
+        <tag>公钥</tag>
+         
+        <tag>私钥</tag>
+         
+        <tag>非对称加密</tag>
+         
+         
+           
+             
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/client-oriented-test-and-server-oriented-test/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>面向客户端测试与面向服务端测试</title>
+        <pubTime>2016-04-15T10:00:00.000Z</pubTime>
+        
+        <tag>测试</tag>
+         
+         
+           
+             
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/atom-experience/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>Atom使用体验</title>
+        <pubTime>2016-03-14T12:00:00.000Z</pubTime>
+        
+        <tag>atom</tag>
+         
+        <tag>编辑器</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://xtutu.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/add-lua-support-for-cplusplus-project/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>C++项目中添加调用Lua脚本</title>
+        <pubTime>2015-06-05T10:00:00.000Z</pubTime>
+        
+        <tag>Lua</tag>
+         
+        <tag>集成</tag>
+         
+        <tag>C++</tag>
+         
+         
+           
+             
+              <breadCrumb title="Lua" url="http://xtutu.github.io/categories/Lua/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/coffeescript-javascript-compare/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>CoffeeScript与JavaScript代码对比</title>
+        <pubTime>2015-06-21T10:28:14.000Z</pubTime>
+        
+        <tag>CoffeeScript</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>区别</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://xtutu.github.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/egret-graphics-draw-optimize/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>Egret Graphics 矢量绘图优化</title>
+        <pubTime>2015-04-05T10:00:00.000Z</pubTime>
+        
+        <tag>Draw</tag>
+         
+        <tag>Render</tag>
+         
+        <tag>Texture</tag>
+         
+         
+           
+             
+              <breadCrumb title="Egret" url="http://xtutu.github.io/categories/Egret/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/about-promise/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>Promise又一个异步编程解决方案！</title>
+        <pubTime>2016-02-02T11:00:00.000Z</pubTime>
+        
+        <tag>Promise</tag>
+         
+        <tag>Async</tag>
+         
+         
+           
+             
+              <breadCrumb title="NodeJS" url="http://xtutu.github.io/categories/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/cmd-tools-in-windows/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
+    <data>
+        <display>
+        <title>Windows下的命令行工具 —— ConEmu + Babun</title>
+        <pubTime>2016-11-26T00:30:00.000Z</pubTime>
+        
+        <tag>Babun</tag>
+         
+        <tag>ConEmu</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://xtutu.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://xtutu.github.io/egret-source-part-touch-event/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
     <data>
         <display>
         <title>Egret源码分析-触摸机制</title>
@@ -423,7 +530,7 @@
          
            
              
-              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
+              <breadCrumb title="Egret" url="http://xtutu.github.io/categories/Egret/"/>
           
         </display>
     </data>
@@ -431,54 +538,8 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/egret-source-part-render/</loc>
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
-    <data>
-        <display>
-        <title>Egret源码分析-渲染</title>
-        <pubTime>2015-03-19T17:28:14.000Z</pubTime>
-        
-        <tag>Egret</tag>
-         
-        <tag>Render</tag>
-         
-         
-           
-             
-              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/egret/</loc>
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
-    <data>
-        <display>
-        <title>Egret-Html5-游戏</title>
-        <pubTime>2015-03-02T17:28:14.000Z</pubTime>
-        
-        <tag>Egret</tag>
-         
-        <tag>Html5</tag>
-         
-        <tag>手游</tag>
-         
-         
-           
-             
-              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/egret-source-part-mainloop/</loc>
-    <lastmod>2017-12-01T07:01:36.528Z</lastmod>
+    <loc>http://xtutu.github.io/egret-source-part-mainloop/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
     <data>
         <display>
         <title>Egret源码分析-主循环</title>
@@ -493,7 +554,7 @@
          
            
              
-              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
+              <breadCrumb title="Egret" url="http://xtutu.github.io/categories/Egret/"/>
           
         </display>
     </data>
@@ -501,23 +562,21 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/egret-graphics-draw-optimize/</loc>
-    <lastmod>2017-12-01T07:01:36.527Z</lastmod>
+    <loc>http://xtutu.github.io/egret-source-part-render/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
     <data>
         <display>
-        <title>Egret Graphics 矢量绘图优化</title>
-        <pubTime>2015-04-05T10:00:00.000Z</pubTime>
+        <title>Egret源码分析-渲染</title>
+        <pubTime>2015-03-19T17:28:14.000Z</pubTime>
         
-        <tag>Draw</tag>
-         
         <tag>Render</tag>
          
-        <tag>Texture</tag>
+        <tag>Egret</tag>
          
          
            
              
-              <breadCrumb title="Egret" url="http://www.xtutu.me/categories/Egret/"/>
+              <breadCrumb title="Egret" url="http://xtutu.github.io/categories/Egret/"/>
           
         </display>
     </data>
@@ -525,23 +584,23 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/coffeescript-javascript-compare/</loc>
-    <lastmod>2017-12-01T07:01:36.527Z</lastmod>
+    <loc>http://xtutu.github.io/git-submodule-and-pull-request/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
     <data>
         <display>
-        <title>CoffeeScript与JavaScript代码对比</title>
-        <pubTime>2015-06-21T10:28:14.000Z</pubTime>
+        <title>Git submodule & pull request ! 让我们啃下这块骨头！</title>
+        <pubTime>2016-12-03T00:30:00.000Z</pubTime>
         
-        <tag>CoffeeScript</tag>
+        <tag>git</tag>
          
-        <tag>JavaScript</tag>
+        <tag>Submodule</tag>
          
-        <tag>区别</tag>
+        <tag>pull request</tag>
          
          
            
              
-              <breadCrumb title="JavaScript" url="http://www.xtutu.me/categories/JavaScript/"/>
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
           
         </display>
     </data>
@@ -549,21 +608,23 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/atom-experience/</loc>
-    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
+    <loc>http://xtutu.github.io/influxDB-handbook-finished/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
     <data>
         <display>
-        <title>Atom使用体验</title>
-        <pubTime>2016-03-14T12:00:00.000Z</pubTime>
+        <title>InfluxDB简明手册 初稿完成了！</title>
+        <pubTime>2016-02-26T12:00:00.000Z</pubTime>
         
-        <tag>atom</tag>
+        <tag>InfluxDB</tag>
          
-        <tag>编辑器</tag>
+        <tag>教程</tag>
+         
+        <tag>文档</tag>
          
          
            
              
-              <breadCrumb title="工具" url="http://www.xtutu.me/categories/%E5%B7%A5%E5%85%B7/"/>
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
           
         </display>
     </data>
@@ -571,19 +632,19 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/client-oriented-test-and-server-oriented-test/</loc>
-    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
+    <loc>http://xtutu.github.io/good-coder-and-bad-coder/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
     <data>
         <display>
-        <title>面向客户端测试与面向服务端测试</title>
-        <pubTime>2016-04-15T10:00:00.000Z</pubTime>
+        <title>普通程序员、优秀程序员差距能有多大？！</title>
+        <pubTime>2016-04-18T12:00:00.000Z</pubTime>
         
-        <tag>测试</tag>
+        <tag>程序员</tag>
          
          
            
              
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
           
         </display>
     </data>
@@ -591,89 +652,23 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/add-lua-support-for-cplusplus-project/</loc>
-    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
+    <loc>http://xtutu.github.io/nodejs-require-module-exports/</loc>
+    <lastmod>2020-03-15T11:05:30.609Z</lastmod>
     <data>
         <display>
-        <title>C++项目中添加调用Lua脚本</title>
-        <pubTime>2015-06-05T10:00:00.000Z</pubTime>
+        <title>NodeJS中require，module，exports的关系</title>
+        <pubTime>2015-12-31T12:00:00.000Z</pubTime>
         
-        <tag>Lua</tag>
+        <tag>机制</tag>
          
-        <tag>集成</tag>
+        <tag>原理</tag>
          
-        <tag>C++</tag>
+        <tag>依赖</tag>
          
          
            
              
-              <breadCrumb title="Lua" url="http://www.xtutu.me/categories/Lua/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/about-rsa-public-key-private-key/</loc>
-    <lastmod>2017-12-01T07:01:36.526Z</lastmod>
-    <data>
-        <display>
-        <title>关于RSA、公钥、私钥、加密、签名的那些概念</title>
-        <pubTime>2016-01-28T11:00:00.000Z</pubTime>
-        
-        <tag>RSA</tag>
-         
-        <tag>公钥</tag>
-         
-        <tag>私钥</tag>
-         
-        <tag>非对称加密</tag>
-         
-         
-           
-             
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/about-human-future/</loc>
-    <lastmod>2017-12-01T07:01:36.525Z</lastmod>
-    <data>
-        <display>
-        <title>走出地球，飞向太空！</title>
-        <pubTime>2016-02-17T12:57:46.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="碎语" url="http://www.xtutu.me/categories/%E7%A2%8E%E8%AF%AD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xtutu.me/about-promise/</loc>
-    <lastmod>2017-12-01T07:01:36.525Z</lastmod>
-    <data>
-        <display>
-        <title>Promise又一个异步编程解决方案！</title>
-        <pubTime>2016-02-02T11:00:00.000Z</pubTime>
-        
-        <tag>Promise</tag>
-         
-        <tag>Async</tag>
-         
-         
-           
-             
-              <breadCrumb title="NodeJS" url="http://www.xtutu.me/categories/NodeJS/"/>
+              <breadCrumb title="NodeJS" url="http://xtutu.github.io/categories/NodeJS/"/>
           
         </display>
     </data>
@@ -681,8 +676,13 @@
 
     
     
+    
+    
+    
+    
+    
   <url>
-    <loc>http://www.xtutu.me/technology-is-not-threshold-any-more/</loc>
+    <loc>http://xtutu.github.io/technology-is-not-threshold-any-more/</loc>
     <lastmod>2016-02-24T12:00:00.000Z</lastmod>
     <data>
         <display>
@@ -694,7 +694,7 @@
          
            
              
-              <breadCrumb title="碎语" url="http://www.xtutu.me/categories/%E7%A2%8E%E8%AF%AD/"/>
+              <breadCrumb title="碎语" url="http://xtutu.github.io/categories/%E7%A2%8E%E8%AF%AD/"/>
           
         </display>
     </data>
@@ -702,7 +702,7 @@
 
     
   <url>
-    <loc>http://www.xtutu.me/search-engine-and-my-website/</loc>
+    <loc>http://xtutu.github.io/search-engine-and-my-website/</loc>
     <lastmod>2016-02-24T02:00:00.000Z</lastmod>
     <data>
         <display>
@@ -720,7 +720,7 @@
          
            
              
-              <breadCrumb title="长知识" url="http://www.xtutu.me/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
+              <breadCrumb title="长知识" url="http://xtutu.github.io/categories/%E9%95%BF%E7%9F%A5%E8%AF%86/"/>
           
         </display>
     </data>

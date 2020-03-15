@@ -85,11 +85,11 @@
 <meta name="keywords" content="CoffeeScript,JavaScript,区别">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CoffeeScript与JavaScript代码对比">
-<meta property="og:url" content="http://www.xtutu.me/coffeescript-javascript-compare/index.html">
+<meta property="og:url" content="http://xtutu.github.io/coffeescript-javascript-compare/index.html">
 <meta property="og:site_name" content="xtutu">
 <meta property="og:description" content="前言最近在做服务端，项目是用CoffeeScript（一下简称CS）来写的，不由感慨，JS大法好。（数据库用的是mongodb…也是js系）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-01T07:01:36.527Z">
+<meta property="og:updated_time" content="2020-03-15T11:05:30.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CoffeeScript与JavaScript代码对比">
 <meta name="twitter:description" content="前言最近在做服务端，项目是用CoffeeScript（一下简称CS）来写的，不由感慨，JS大法好。（数据库用的是mongodb…也是js系）">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://www.xtutu.me/coffeescript-javascript-compare/"/>
+  <link rel="canonical" href="http://xtutu.github.io/coffeescript-javascript-compare/"/>
 
 
 
@@ -274,7 +274,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.xtutu.me/coffeescript-javascript-compare/">
+    <link itemprop="mainEntityOfPage" href="http://xtutu.github.io/coffeescript-javascript-compare/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xtutu">
@@ -426,7 +426,7 @@
 <h2 id="坑，绝对的坑！"><a href="#坑，绝对的坑！" class="headerlink" title="坑，绝对的坑！"></a>坑，绝对的坑！</h2><p>因为coffee是靠缩进来解析代码的，这导致即使是一个空格也会产生BUG。<br>比如下面这个问题，当时查了好半天。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">idx= count * (page - <span class="number">1</span>) <span class="number">-1</span></span><br><span class="line">### 这句话会被解析为</span><br><span class="line">idx = count * (page - <span class="number">1</span>)(<span class="number">-1</span>);</span><br><span class="line">(page - <span class="number">1</span>)被解析为函数了</span><br><span class="line">只要把<span class="string">"-1"</span>改成<span class="string">"- 1"</span>就好了</span><br><span class="line">###</span><br></pre></td></tr></table></figure></p>
 <h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>看完官方的整个教程，其实可以发现，CoffeeScript和TypeScript是两种不同类型的JS语法变种，后者更倾向于把JS变为Java之类的语言，而本篇的CS，则是为了让JS代码，变得更加精简，但这也导致代码的可读性降低了不少（虽然熟悉了之后，这种情况可以减轻不少，但是我还是不怎么推荐）。</p>
 <blockquote>
-<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://www.xtutu.me">xtutu.me</a></p>
+<p>转载本站文章请注明作者(xtutu)和出处 <a href="http://xtutu.github.io">xtutu.me</a></p>
 </blockquote>
 
       
@@ -711,7 +711,7 @@ var jiathis_config={
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -870,7 +870,7 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.xtutu.me/coffeescript-javascript-compare/';
+          this.page.url = 'http://xtutu.github.io/coffeescript-javascript-compare/';
           this.page.identifier = 'coffeescript-javascript-compare/';
           this.page.title = 'CoffeeScript与JavaScript代码对比';
         };
